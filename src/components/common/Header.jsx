@@ -19,7 +19,7 @@ const Header = () => {
             {navlink.map((links, i) => {
               return (
                 <>
-                  <Link to={"links.url"} key={i}>
+                  <Link to={links.url} key={i}>
                     {links.text}
                   </Link>
                 </>

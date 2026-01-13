@@ -65,7 +65,7 @@ header {
   background-color: var(--headingColor);
   height: 10vh;
   line-height: 10vh;
-  position: static;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -94,6 +94,12 @@ button {
   border-radius: 50px;
   margin-top: 20px;
   cursor: pointer;
+}
+
+
+.primaryBtn {
+  background: none;
+  border: 2px solid var(--primaryColor);
 }
 
 /************************** Header-End ***************************/
@@ -138,4 +144,119 @@ button {
 
   }
 
+}
+
+section {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+
+
+/**************************** HERO *********************************/
+
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../src/assets/home-bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 90vh;
+}
+
+.heroContainer {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+
+
+.heading {
+  font-size: 30px;
+  color: var(--primaryColor);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*********************** About ******************************/
+
+.about .primaryBtn {
+  margin-left: 20px;
+
+}
+
+.about .heading {
+  text-align: left;
+  margin: 0;
+}
+
+.left {
+  width: 35%;
+}
+
+.right {
+  width: 65%;
+}
+
+/************************* Services ****************************/
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.services .box {
+  background-color: var(--primaryBackground);
+  padding: 35px;
+}
+
+.services i {
+  color: var(--primaryColor);
+}
+
+.services h3 {
+  margin-top: 20px;
+}
+
+/**************************** Counter ************************/
+
+.grid4 {
+  grid-template-columns: repeat(4, 1fr);
+  height: 50vh;
+  place-items: center;
+  text-align: center;
+}
+
+.counter {
+  margin-top: 80px;
+  position: relative;
+}
+
+.hero.counter::after {
+  background-image: url("../src/assets/some-facts-bg.png");
+  height: 50vh;
+}
+
+.counter h1 {
+  margin: 0;
 }

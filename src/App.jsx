@@ -1,13 +1,18 @@
 import Pages from "./components/pages/Pages";
-import { BrowserRouter } from "react-router-dom";
+// import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./App.css";
+import Header from "./components/common/Header";
 
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
+        {/* <BrowserRouter> */}
+        <Header />
         <Pages />
-      </BrowserRouter>
+        {/* </BrowserRouter> */}
+      </HashRouter>
     </div>
   );
 };
