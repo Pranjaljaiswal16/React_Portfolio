@@ -12,10 +12,10 @@ const About = () => {
             return (
               <Fragment key={i}>
                 <div className="left">
-                  <img src={Man} />
+                  <img src={Man} data-aos="fade-down-right" />
                 </div>
 
-                <div className="right">
+                <div className="right" data-aos="fade-down-left">
                   <Heading title="About Me" />
                   <p>{val.desc}</p>
                   <p>{val.desc1}</p>

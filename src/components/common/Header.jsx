@@ -12,14 +12,14 @@ const Header = () => {
       <header>
         <div className="container flexsb">
           <div className="logo">
-            <img src={Logo} alt="logo" />
+            <img src={Logo} alt="logo" data-aos="zoom-in-right" />
           </div>
 
           <div className={Responsive ? "hideMenu" : "nav"}>
             {navlink.map((links, i) => {
               return (
                 <>
-                  <Link to={links.url} key={i}>
+                  <Link to={links.url} key={i} data-aos="zoom-in-left">
                     {links.text}
                   </Link>
                 </>

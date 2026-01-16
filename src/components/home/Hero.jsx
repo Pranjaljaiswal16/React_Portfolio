@@ -8,7 +8,7 @@ const Hero = () => {
         {home.map((val, i) => {
           return (
             <div className="heroContainer" key={i}>
-              <h3>{val.text}</h3>
+              <h3 data-aos="fade-right">{val.text}</h3>
               <h1>
                 <Typewriter
                   options={{
@@ -18,8 +18,10 @@ const Hero = () => {
                   }}
                 />
               </h1>
-              <p>{val.desc}</p>
-              <button className="primaryBtn">DownLoad CV</button>
+              <p data-aos="fade-left">{val.desc}</p>
+              <button className="primaryBtn" data-aos="fade-up-left">
+                DownLoad CV
+              </button>
             </div>
           );
         })}

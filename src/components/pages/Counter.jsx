@@ -9,7 +9,7 @@ const Counter = () => {
         <div className="container grid3 grid4">
           {project.map((item, i) => {
             return (
-              <div className="box" key={i}>
+              <div className="box" key={i} data-aos="zoom-in">
                 <i>{item.icon}</i>
                 <h1 className="heading">
                   <CountUp enableScrollSpy duration={2.75} end={item.num} />
